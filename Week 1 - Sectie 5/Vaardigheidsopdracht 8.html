@@ -1,0 +1,104 @@
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      body {
+        font-family: monospace;
+      }
+
+      h1 {
+        text-decoration: underline 1px solid black;
+        margin: auto;
+        width: 30%;
+        font-weight: normal;
+      }
+
+      form {
+        font-size: 20px;
+        margin: auto;
+        width: 30%;
+      }
+
+      .textbased {
+        box-shadow: 0 0 3px orange;
+      }
+
+      select,
+      input[type="text"],
+      input[type="submit"],
+      input[type="email"],
+      input[type="password"] {
+        width: 50%;
+        box-sizing: border-box;
+      }
+
+      select,
+      input[type="text"],
+      input[type="email"],
+      input[type="password"] {
+        float: right;
+      }
+
+      @media only screen and (min-width: 900px) {
+        .break1 {
+          display: inline;
+        }
+        .break2 {
+          display: none;
+        }
+      }
+      @media only screen and (max-width: 900px) {
+        .break1 {
+          display: inline;
+        }
+        .break2 {
+          display: none;
+        }
+      }
+      @media only screen and (max-width: 500px) {
+        .break1 {
+          display: inline;
+        }
+        .break2 {
+          display: inline;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Contactformulier</h1>
+    <br />
+    <form action="/Vaardigheidsopdracht 8.html">
+      <label for="name">Naam</label><br class="break2" />
+      <input type="text" id="name" name="name" class="textbased" /><br
+        class="break1"
+      />
+      <label for="email">Email</label><br class="break2" />
+      <input type="email" id="email" name="email" class="textbased" /><br
+        class="break1"
+      />
+      <label for="password">Wachtwoord</label><br class="break2" />
+      <input
+        type="password"
+        id="password"
+        name="password"
+        class="textbased"
+      /><br class="break1" />
+      <label for="gender">Geslacht</label><br class="break2" />
+      <select id="gender" name="gender" class="textbased">
+        <option value="man">Man</option>
+        <option value="woman">Vrouw</option>
+        <option value="nb">Non-binair</option>
+        <option value="notspecify">Will liever niet zeggen</option></select
+      ><br class="break1" />
+      <label for="media">Media</label><br class="break2" />
+      <input type="radio" id="newsletter" name="media" value="Nieuwsbrief" />
+      <label for="newsletter">Nieuwsbrief</label><br class="break1" />
+      <input type="radio" id="mailing" name="media" value="Mailing" />
+      <label for="newsletter">Mailing</label><br class="break1" />
+      <input type="radio" id="post" name="media" value="Post" />
+      <label for="newsletter">Post</label><br class="break1" />
+      <input type="submit" value="Stuur me op!" class="textbased" />
+    </form>
+  </body>
+</html>
