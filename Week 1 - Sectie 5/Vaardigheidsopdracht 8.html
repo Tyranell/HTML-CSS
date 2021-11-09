@@ -4,11 +4,24 @@
     <style>
       body {
         font-family: monospace;
+        width: 100%;
+      }
+
+      html {
+        width: 100%;
+      }
+      .header-img {
+        width: 100%;
+        height: 33%;
+        background-image: url(The_Warp.jpg);
+        background-size: 100% 100%;
+        overflow: hidden;
       }
 
       h1 {
-        text-decoration: underline 1px solid black;
+        text-decoration: underline 1px solid orange;
         margin: auto;
+        margin-top: 30px;
         width: 30%;
         font-weight: normal;
       }
@@ -23,28 +36,28 @@
         box-shadow: 0 0 3px orange;
       }
 
-      select,
-      input[type="text"],
-      input[type="submit"],
-      input[type="email"],
-      input[type="password"] {
-        width: 50%;
-        box-sizing: border-box;
-      }
-
-      select,
-      input[type="text"],
-      input[type="email"],
-      input[type="password"] {
-        float: right;
-      }
-
       @media only screen and (min-width: 900px) {
         .break1 {
           display: inline;
         }
         .break2 {
           display: none;
+        }
+
+        select,
+        input[type="text"],
+        input[type="submit"],
+        input[type="email"],
+        input[type="password"] {
+          width: 50%;
+          box-sizing: border-box;
+        }
+
+        select,
+        input[type="text"],
+        input[type="email"],
+        input[type="password"] {
+          float: right;
         }
       }
       @media only screen and (max-width: 900px) {
@@ -54,6 +67,22 @@
         .break2 {
           display: none;
         }
+
+        select,
+        input[type="text"],
+        input[type="submit"],
+        input[type="email"],
+        input[type="password"] {
+          width: 50%;
+          box-sizing: border-box;
+        }
+
+        select,
+        input[type="text"],
+        input[type="email"],
+        input[type="password"] {
+          float: right;
+        }
       }
       @media only screen and (max-width: 500px) {
         .break1 {
@@ -62,10 +91,27 @@
         .break2 {
           display: inline;
         }
+
+        select,
+        input[type="text"],
+        input[type="submit"],
+        input[type="email"],
+        input[type="password"] {
+          width: 150%;
+          box-sizing: border-box;
+        }
+
+        select,
+        input[type="text"],
+        input[type="email"],
+        input[type="password"] {
+          float: left;
+        }
       }
     </style>
   </head>
-  <body>
+  <body style="margin: 0">
+    <div class="header-img"></div>
     <h1>Contactformulier</h1>
     <br />
     <form action="/Vaardigheidsopdracht 8.html">
@@ -95,9 +141,9 @@
       <input type="radio" id="newsletter" name="media" value="Nieuwsbrief" />
       <label for="newsletter">Nieuwsbrief</label><br class="break1" />
       <input type="radio" id="mailing" name="media" value="Mailing" />
-      <label for="newsletter">Mailing</label><br class="break1" />
+      <label for="mailing">Mailing</label><br class="break1" />
       <input type="radio" id="post" name="media" value="Post" />
-      <label for="newsletter">Post</label><br class="break1" />
+      <label for="post">Post</label><br class="break1" />
       <input type="submit" value="Stuur me op!" class="textbased" />
     </form>
   </body>
