@@ -1,5 +1,6 @@
 <html>
   <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <style>
       body {
         font-size: 0;
@@ -15,6 +16,7 @@
         font-size: 0;
         vertical-align: top;
         display: inline-block;
+        transition: transform 0.2s;
       }
       .Terminator {
         background: url("GKStrikeColor.jpg");
@@ -26,6 +28,7 @@
         font-size: 0;
         vertical-align: top;
         display: inline-block;
+        transition: transform 0.2s;
       }
       .Hammer {
         background: url("GKArt9th.jpg");
@@ -37,6 +40,7 @@
         font-size: 0;
         vertical-align: top;
         display: inline-block;
+        transition: transform 0.2s;
       }
       .Shoulder {
         background: url("GK_Shoulder_Pauldron.jpg");
@@ -49,6 +53,14 @@
         background-position: top;
         vertical-align: top;
         display: inline-block;
+        transition: transform 0.2s;
+      }
+
+      .Hammer:hover,
+      .Shoulder:hover,
+      .Striker:hover,
+      .Terminator:hover {
+        transform: scale(1.2);
       }
     </style>
   </head>
