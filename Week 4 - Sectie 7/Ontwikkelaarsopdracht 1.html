@@ -1,0 +1,79 @@
+<html>
+  <head>
+    <style>
+      body {
+        text-align: center;
+      }
+
+      .bigflexbox {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        background-color: pink;
+        height: 500px;
+        width: 100%;
+      }
+
+      .flexbox1,
+      .flexbox2 {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        width: 50%;
+      }
+
+      .highlighted {
+        font-weight: bold;
+        background-color: hotpink;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Flexbox</h1>
+
+    <div class="bigflexbox">
+      <div class="flexbox1">
+        <p>Container Properties</p>
+        <p class="highlighted">//Creates a flexbox</p>
+        <p>display: flex;</p>
+        <p class="highlighted">//Direction, establishes main-axis</p>
+        <p>flex-direction: row || row-reverse || column || column-reverse</p>
+        <p class="highlighted">//To wrap or not to wrap</p>
+        <p>flex-wrap: nowrap || wrap || wrap-reverse</p>
+        <p class="highlighted">//Shorthanded</p>
+        <p>flex-flow: flex-direction flex-wrap</p>
+        <p class="highlighted">//Alignment main-axis</p>
+        <p>
+          align-items: stretch || flex-start || flex-end || center || baseline
+        </p>
+        <p class="highlighted">Alignment lines within the container</p>
+        <p>
+          align-content: normal || flex-start || flex-end || center ||
+          space-between || space-around || space-evenly || stretch
+        </p>
+      </div>
+      <div class="flexbox2">
+        <p>Item Properties</p>
+        <p class="highlighted">//Order of the (flex) html-elements</p>
+        <p>order: integer (default: 0)</p>
+        <p class="highlighted">//Ability to grow if necessary</p>
+        <p>flex-grow: integer (default: 0)</p>
+        <p class="highlighted">//Ability to shrink if necessary</p>
+        <p>flex-shrink: positive integer (default: 1)</p>
+        <p class="highlighted">//Defines default size of the item</p>
+        <p>flex-basis: length || keyword (default: auto)</p>
+        <p class="highlighted">//Shorthanded (grow shrink basis)</p>
+        <p>flex: flex-grow flex-shrink flex-basis (default: 0 1 auto)</p>
+        <p class="highlighted">//Override default alignment form align items</p>
+        <p>
+          align-self: auto || flex-start || flex-end || center || baseline ||
+          stretch
+        </p>
+        <p class="highlighted"></p>
+        <p></p>
+        <p class="highlighted"></p>
+        <p></p>
+      </div>
+    </div>
+  </body>
+</html>
