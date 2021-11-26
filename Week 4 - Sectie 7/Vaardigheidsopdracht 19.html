@@ -7,9 +7,8 @@
         flex-wrap: wrap;
         overflow-x: auto;
         height: 50%;
-        gap: 2rem 0;
-        justify-content: center;
       }
+
       .flex__child {
         border: solid 1px green;
         flex: 0 0 auto;
@@ -40,46 +39,8 @@
       .flex__child:nth-child(4),
       .flex__child:nth-child(8) {
         background-color: purple;
-      }
-
-      .flex__child:nth-child(1) {
-        order: 6;
-      }
-
-      .flex__child:nth-child(2) {
-        order: 1;
-      }
-
-      .flex__child:nth-child(3) {
-        order: 7;
-      }
-
-      .flex__child:nth-child(4) {
-        order: 2;
-      }
-
-      .flex__child:nth-child(5) {
-        order: 8;
-      }
-
-      .flex__child:nth-child(6) {
-        order: 3;
-      }
-
-      .flex__child:nth-child(7) {
-        order: 9;
-      }
-
-      .flex__child:nth-child(8) {
-        order: 4;
-      }
-
-      .flex__child:nth-child(9) {
-        order: 10;
-      }
-
-      .flex__child:nth-child(10) {
-        order: 5;
+        align-self: flex-start;
+        width: 37.5%;
       }
     </style>
   </head>

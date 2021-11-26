@@ -1,0 +1,71 @@
+<html>
+  <head>
+    <style>
+      .flex-container {
+        border: solid 2px black;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        overflow-x: auto;
+        height: 10%;
+      }
+
+      .flex__child {
+        border: solid 1px green;
+        flex: 0 0 auto;
+        width: 20rem;
+        display: flex;
+        flex-grow: 1;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .flex__child:nth-child(1) {
+        background-color: yellow;
+      }
+      .flex__child:nth-child(2) {
+        background-color: red;
+      }
+      .flex__child:nth-child(3) {
+        background-color: blue;
+      }
+      .flex__child:nth-child(4) {
+        background-color: purple;
+      }
+
+      @media only screen and (max-width: 600px) {
+        .flex__child {
+          border: solid 1px green;
+          flex: 0 0 auto;
+          display: flex;
+          width: 1rem;
+          justify-content: center;
+          align-items: center;
+        }
+
+        .flex__child:nth-child(1) {
+          background-color: yellow;
+        }
+        .flex__child:nth-child(2) {
+          background-color: red;
+          flex-grow: 1;
+        }
+        .flex__child:nth-child(3) {
+          background-color: blue;
+          flex-grow: 1;
+        }
+        .flex__child:nth-child(4) {
+          background-color: purple;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="flex-container">
+      <div class="flex__child">1</div>
+      <div class="flex__child">2</div>
+      <div class="flex__child">3</div>
+      <div class="flex__child">4</div>
+    </div>
+  </body>
+</html>

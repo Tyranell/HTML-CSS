@@ -7,9 +7,8 @@
         flex-wrap: wrap;
         overflow-x: auto;
         height: 50%;
-        gap: 2rem 0;
-        justify-content: center;
       }
+
       .flex__child {
         border: solid 1px green;
         flex: 0 0 auto;
@@ -42,44 +41,37 @@
         background-color: purple;
       }
 
-      .flex__child:nth-child(1) {
-        order: 6;
-      }
+      @media only screen and (max-width: 600px) {
+        .flex-container {
+          border: solid 2px black;
+          display: flex;
+          flex-wrap: wrap;
+          flex-direction: column;
+          overflow-x: visible;
+          height: 50%;
+        }
 
-      .flex__child:nth-child(2) {
-        order: 1;
-      }
+        .flex__child {
+          border: solid 1px green;
+          flex: 0 0 auto;
+          width: 99.5%;
+          display: flex;
+          flex-grow: 1;
+          justify-content: center;
+          align-items: center;
+        }
 
-      .flex__child:nth-child(3) {
-        order: 7;
-      }
+        .flex__child:nth-child(1) {
+          background-color: yellow;
+          width: 30rem;
+        }
 
-      .flex__child:nth-child(4) {
-        order: 2;
-      }
-
-      .flex__child:nth-child(5) {
-        order: 8;
-      }
-
-      .flex__child:nth-child(6) {
-        order: 3;
-      }
-
-      .flex__child:nth-child(7) {
-        order: 9;
-      }
-
-      .flex__child:nth-child(8) {
-        order: 4;
-      }
-
-      .flex__child:nth-child(9) {
-        order: 10;
-      }
-
-      .flex__child:nth-child(10) {
-        order: 5;
+        .flex__child:nth-child(5),
+        .flex__child:nth-child(9) {
+          background-color: yellow;
+          width: 30rem;
+          margin-top: 15px;
+        }
       }
     </style>
   </head>
