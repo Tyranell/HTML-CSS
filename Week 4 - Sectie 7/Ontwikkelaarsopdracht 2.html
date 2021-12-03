@@ -1,0 +1,102 @@
+<html>
+  <head>
+    <style>
+      .navigationbar,
+      html,
+      body {
+        width: 100%;
+        margin: 0;
+      }
+      .navigationbar {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 100%;
+        background-color: green;
+      }
+
+      .home {
+        border: solid 1px black;
+        flex: 3 1 0px;
+        text-align: center;
+        margin: 5px;
+      }
+
+      .nothome {
+        border: solid 1px black;
+        flex: 1 1 0px;
+        text-align: center;
+        margin: 5px;
+      }
+
+      @media only screen and (max-width: 1200px) {
+        .home {
+          border: solid 1px black;
+          flex: 1 1 0px;
+          text-align: center;
+          margin: 5px;
+        }
+
+        .nothome {
+          border: solid 1px black;
+          flex: 1 1 0px;
+          text-align: center;
+          margin: 5px;
+        }
+      }
+
+      @media only screen and (max-width: 768px) {
+        .home {
+          border: solid 1px black;
+          flex: 1 1 0px;
+          text-align: center;
+          margin: 5px;
+        }
+
+        .nothome {
+          border: solid 1px black;
+          flex: 1 1 0px;
+          text-align: center;
+          margin: 5px;
+        }
+
+        .breaker {
+          flex-basis: 100%;
+        }
+      }
+
+      @media only screen and (max-width: 480px) {
+        .navigationbar {
+          display: flex;
+          flex-direction: column;
+          flex-wrap: wrap;
+          width: 100%;
+          background-color: green;
+        }
+
+        .home {
+          border: solid 1px black;
+          flex: 1 1 0px;
+          text-align: center;
+          margin: 5px;
+        }
+
+        .nothome {
+          border: solid 1px black;
+          flex: 1 1 0px;
+          text-align: center;
+          margin: 5px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="navigationbar">
+      <div class="home">Home</div>
+      <div class="nothome">Profile</div>
+      <div class="breaker"></div>
+      <div class="nothome">Search</div>
+      <div class="nothome">Logout</div>
+    </div>
+  </body>
+</html>

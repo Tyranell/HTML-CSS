@@ -17,8 +17,22 @@
         flex-wrap: wrap;
         flex-direction: row;
         background-color: pink;
-        height: 500px;
         width: 100%;
+        border: dashed 3px black;
+        gap: 5px;
+        justify-content: center;
+      }
+
+      .flexboxelement {
+        margin: 2px;
+        border: dashed 1px blue;
+        flex-basis: 100%;
+        height: 0;
+        flex: 1;
+      }
+
+      .hiddentext {
+        visibility: hidden;
       }
 
       .flexbox1,
@@ -26,12 +40,21 @@
         display: flex;
         flex-wrap: wrap;
         flex-direction: column;
-        width: 50%;
+        width: 49.5%;
+        margin: 2px;
+        border: solid 1px black;
       }
 
       .highlighted {
         font-weight: bold;
         background-color: hotpink;
+      }
+
+      .nonhighlighted {
+        margin-top: -15px;
+        font-weight: normal;
+        background-color: transparent;
+        font-style: normal;
       }
     </style>
   </head>
@@ -40,46 +63,110 @@
 
     <div class="bigflexbox">
       <div class="flexbox1">
-        <p>Container Properties</p>
-        <p class="highlighted">//Creates a flexbox</p>
-        <p>display: flex;</p>
-        <p class="highlighted">//Direction, establishes main-axis</p>
-        <p>flex-direction: row || row-reverse || column || column-reverse</p>
-        <p class="highlighted">//To wrap or not to wrap</p>
-        <p>flex-wrap: nowrap || wrap || wrap-reverse</p>
-        <p class="highlighted">//Shorthanded</p>
-        <p>flex-flow: flex-direction flex-wrap</p>
-        <p class="highlighted">//Alignment main-axis</p>
-        <p>
-          align-items: stretch || flex-start || flex-end || center || baseline
-        </p>
-        <p class="highlighted">Alignment lines within the container</p>
-        <p>
-          align-content: normal || flex-start || flex-end || center ||
-          space-between || space-around || space-evenly || stretch
-        </p>
+        <div class="flexboxelement"><p>Container Properties</p></div>
+        <div class="flexboxelement">
+          <p class="highlighted">//Creates a flexbox</p>
+          <p class="nonhighlighted">display: flex;</p>
+        </div>
+        <div class="flexboxelement">
+          <p class="highlighted">//Direction, establishes main-axis</p>
+          <p class="nonhighlighted">
+            flex-direction: row || row-reverse || column || column-reverse
+          </p>
+        </div>
+        <div class="flexboxelement">
+          <p class="highlighted">//To wrap or not to wrap</p>
+          <p class="nonhighlighted">
+            flex-wrap: nowrap || wrap || wrap-reverse
+          </p>
+        </div>
+        <div class="flexboxelement">
+          <p class="highlighted">//Shorthanded (direction wrap)</p>
+          <p class="nonhighlighted">flex-flow: flex-direction flex-wrap</p>
+        </div>
+        <div class="flexboxelement">
+          <p class="highlighted">//Alignment main axis</p>
+          <p class="nonhighlighted">
+            justify-content: flex-start || flex-end || center || space-between
+            || space-around || space-evenly
+          </p>
+        </div>
+        <div class="flexboxelement">
+          <p class="highlighted">//Alignment cross axis</p>
+          <p class="nonhighlighted">
+            align-items: stretch || flex-start || flex-end || center || baseline
+          </p>
+        </div>
+        <div class="flexboxelement">
+          <p class="highlighted">//Alignment lines within the container</p>
+          <p></p>
+          <p class="nonhighlighted">
+            align-content: normal || flex-start || flex-end || center ||
+            space-between || space-around || space-evenly || stretch
+          </p>
+        </div>
+        <div class="flexboxelement">
+          <p class="hiddentext">
+            align-content: normal || flex-start || flex-end || center ||
+            space-between || space-around || space-evenly || stretch
+          </p>
+        </div>
       </div>
       <div class="flexbox2">
-        <p>Item Properties</p>
-        <p class="highlighted">//Order of the (flex) html-elements</p>
-        <p>order: integer (default: 0)</p>
-        <p class="highlighted">//Ability to grow if necessary</p>
-        <p>flex-grow: integer (default: 0)</p>
-        <p class="highlighted">//Ability to shrink if necessary</p>
-        <p>flex-shrink: positive integer (default: 1)</p>
-        <p class="highlighted">//Defines default size of the item</p>
-        <p>flex-basis: length || keyword (default: auto)</p>
-        <p class="highlighted">//Shorthanded (grow shrink basis)</p>
-        <p>flex: flex-grow flex-shrink flex-basis (default: 0 1 auto)</p>
-        <p class="highlighted">//Override default alignment form align items</p>
-        <p>
-          align-self: auto || flex-start || flex-end || center || baseline ||
-          stretch
-        </p>
-        <p class="highlighted"></p>
-        <p></p>
-        <p class="highlighted"></p>
-        <p></p>
+        <div class="flexboxelement"><p>Item Properties</p></div>
+        <div class="flexboxelement">
+          <p class="highlighted">//Order of the (flex) html-elements</p>
+          <p></p>
+          <p class="nonhighlighted">order: integer (default: 0)</p>
+        </div>
+        <div class="flexboxelement">
+          <p class="highlighted">//Ability to grow if necessary</p>
+          <p></p>
+          <p class="nonhighlighted">flex-grow: integer (default: 0)</p>
+        </div>
+        <div class="flexboxelement">
+          <p class="highlighted">//Ability to shrink if necessary</p>
+          <p></p>
+          <p class="nonhighlighted">
+            flex-shrink: positive integer (default: 1)
+          </p>
+        </div>
+        <div class="flexboxelement">
+          <p class="highlighted">//Defines default size of the item</p>
+          <p></p>
+          <p class="nonhighlighted">
+            flex-basis: length || keyword (default: auto)
+          </p>
+        </div>
+        <div class="flexboxelement">
+          <p class="highlighted">//Shorthanded (grow shrink basis)</p>
+          <p></p>
+          <p class="nonhighlighted">
+            flex: flex-grow flex-shrink flex-basis (default: 0 1 auto)
+          </p>
+        </div>
+        <div class="flexboxelement">
+          <p class="highlighted">
+            //Override default alignment form align items
+          </p>
+          <p></p>
+          <p class="nonhighlighted">
+            align-self: auto || flex-start || flex-end || center || baseline ||
+            stretch
+          </p>
+        </div>
+        <div class="flexboxelement">
+          <p class="hiddentext">
+            align-content: normal || flex-start || flex-end || center ||
+            space-between || space-around || space-evenly || stretch
+          </p>
+        </div>
+        <div class="flexboxelement">
+          <p class="hiddentext">
+            align-content: normal || flex-start || flex-end || center ||
+            space-between || space-around || space-evenly || stretch
+          </p>
+        </div>
       </div>
     </div>
   </body>
