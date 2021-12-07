@@ -1,0 +1,82 @@
+<html>
+  <head>
+    <style>
+      body {
+        background-color: salmon;
+      }
+
+      .itemA,
+      .itemB,
+      .itemC,
+      .itemD,
+      .itemE,
+      .itemF,
+      .itemG {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .itemA {
+        grid-area: a;
+        background-color: yellow;
+      }
+
+      .itemB {
+        grid-area: b;
+        background-color: pink;
+      }
+
+      .itemC {
+        grid-area: c;
+        background-color: red;
+      }
+
+      .itemD {
+        grid-area: d;
+        background-color: blue;
+      }
+
+      .itemE {
+        grid-area: e;
+        background-color: purple;
+      }
+
+      .itemF {
+        grid-area: f;
+        background-color: green;
+      }
+
+      .itemG {
+        grid-area: g;
+        background-color: skyblue;
+      }
+
+      .grid-container {
+        display: grid;
+        grid-template-rows: repeat(6, 1fr);
+        border: solid 1px black;
+        height: 25%;
+        width: 20%;
+        row-gap: 30px;
+        column-gap: 30px;
+        grid:
+          "b c d d"
+          "a e f f"
+          "g . . ."
+          "g . . .";
+      }
+    </style>
+  </head>
+  <body>
+    <div class="grid-container">
+      <div class="itemA">A</div>
+      <div class="itemB">B</div>
+      <div class="itemC">C</div>
+      <div class="itemD">D</div>
+      <div class="itemE">E</div>
+      <div class="itemF">F</div>
+      <div class="itemG">G</div>
+    </div>
+  </body>
+</html>
