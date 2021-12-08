@@ -1,0 +1,104 @@
+<html>
+  <head>
+    <style>
+      body {
+        background-color: salmon;
+      }
+
+      .item0,
+      .itemA,
+      .itemB,
+      .itemC,
+      .itemD,
+      .itemE,
+      .itemF,
+      .itemG,
+      .itemH,
+      .itemI,
+      .itemJ,
+      .itemK,
+      .itemL,
+      .itemM,
+      .itemN,
+      .itemO,
+      .itemP,
+      .itemQ,
+      .itemR,
+      .itemS,
+      .itemT,
+      .itemU {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: min-content;
+      }
+
+      .item0 {
+        grid-area: nul;
+        background-color: pink;
+      }
+
+      .itemA {
+        grid-area: a;
+        background-color: red;
+        align-self: flex-end;
+      }
+
+      .itemB {
+        grid-area: b;
+        background-color: blue;
+      }
+
+      .itemC {
+        grid-area: c;
+        background-color: purple;
+      }
+
+      .itemD {
+        grid-area: d;
+        background-color: green;
+      }
+
+      .itemE {
+        grid-area: e;
+        background-color: skyblue;
+      }
+
+      .itemF {
+        grid-area: f;
+        background-color: yellow;
+      }
+
+      .itemG {
+        grid-area: g;
+        background-color: pink;
+      }
+
+      .grid-container {
+        display: grid;
+        grid-template-rows: repeat(6, 1fr);
+        border: solid 1px black;
+        height: 15%;
+        width: 30%;
+        gap: 20px;
+        grid:
+          "nul nul a b b b"
+          ". . a d d d"
+          ". . e f f f"
+          "c c g g g g";
+      }
+    </style>
+  </head>
+  <body>
+    <div class="grid-container">
+      <div class="item0">0</div>
+      <div class="itemA">1</div>
+      <div class="itemB">2</div>
+      <div class="itemC">3</div>
+      <div class="itemD">4</div>
+      <div class="itemE">5</div>
+      <div class="itemF">6</div>
+      <div class="itemG">7</div>
+    </div>
+  </body>
+</html>

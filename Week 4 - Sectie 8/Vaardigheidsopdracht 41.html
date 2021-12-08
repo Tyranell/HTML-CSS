@@ -1,0 +1,226 @@
+<html>
+  <head>
+    <style>
+      body {
+        background-color: salmon;
+      }
+
+      .item0,
+      .itemA,
+      .itemB,
+      .itemC,
+      .itemD,
+      .itemE,
+      .itemF,
+      .itemG,
+      .itemH,
+      .itemI,
+      .itemJ,
+      .itemK,
+      .itemL,
+      .itemM,
+      .itemN,
+      .itemO,
+      .itemP,
+      .itemQ,
+      .itemR,
+      .itemS,
+      .itemT,
+      .itemU {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .item0 {
+        grid-area: nul;
+        background-color: pink;
+      }
+
+      .itemA {
+        grid-area: a;
+        background-color: red;
+      }
+
+      .itemB {
+        grid-area: b;
+        background-color: blue;
+      }
+
+      .itemC {
+        grid-area: c;
+        background-color: purple;
+      }
+
+      .itemD {
+        grid-area: d;
+        background-color: green;
+      }
+
+      .itemE {
+        grid-area: e;
+        background-color: skyblue;
+      }
+
+      .itemF {
+        grid-area: f;
+        background-color: yellow;
+      }
+
+      .itemG {
+        grid-area: g;
+        background-color: pink;
+      }
+
+      .itemH {
+        grid-area: h;
+        background-color: red;
+      }
+
+      .itemI {
+        grid-area: i;
+        background-color: blue;
+      }
+
+      .itemJ {
+        grid-area: j;
+        background-color: purple;
+      }
+
+      .itemK {
+        grid-area: k;
+        background-color: green;
+      }
+
+      .itemL {
+        grid-area: l;
+        background-color: skyblue;
+      }
+
+      .itemM {
+        grid-area: m;
+        background-color: yellow;
+      }
+
+      .itemN {
+        grid-area: n;
+        background-color: pink;
+      }
+
+      .itemO {
+        grid-area: o;
+        background-color: red;
+      }
+
+      .itemP {
+        grid-area: p;
+        background-color: blue;
+      }
+
+      .itemQ {
+        grid-area: q;
+        background-color: purple;
+      }
+
+      .itemR {
+        grid-area: r;
+        background-color: green;
+      }
+
+      .itemS {
+        grid-area: s;
+        background-color: skyblue;
+      }
+
+      .grid-container {
+        margin: auto;
+        display: grid;
+        grid-template-rows: repeat(6, 1fr);
+        border: solid 1px black;
+        height: 95%;
+        width: 80%;
+        grid:
+          "nul a a b c c"
+          "e a a d d d"
+          "f g h h i l"
+          "j j h h m n"
+          "k k k o o p"
+          "q q . o o ."
+          "r r r . . .";
+      }
+
+      @media only screen and (max-width: 900px) {
+        .grid-container {
+          display: grid;
+          grid-template-rows: repeat(6, 1fr);
+          border: solid 1px black;
+          height: 95%;
+          width: 80%;
+          grid:
+            "nul a a b"
+            "e a a f"
+            "c c g i"
+            "d d d l"
+            "h h j j"
+            "h h m n"
+            "k k k p"
+            "o o q q"
+            "o o . ."
+            "r r r .";
+        }
+      }
+
+      @media only screen and (max-width: 500px) {
+        body {
+          overflow-y: hidden;
+        }
+        .grid-container {
+          display: grid;
+          overflow-y: hidden;
+          grid-template-rows: repeat(6, 1fr);
+          border: solid 1px black;
+          height: 225%;
+          width: 80%;
+          grid:
+            "nul a a"
+            "b a a"
+            "c c e"
+            "c c e"
+            "d d d"
+            "f g i"
+            "h h l"
+            "h h m"
+            "o o n"
+            "o o p"
+            "j j ."
+            "k k k"
+            "q q ."
+            "r r r";
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="grid-container">
+      <div class="item0">0</div>
+      <div class="itemA">1</div>
+      <div class="itemB">2</div>
+      <div class="itemC">3</div>
+      <div class="itemD">4</div>
+      <div class="itemE">5</div>
+      <div class="itemF">6</div>
+      <div class="itemG">7</div>
+      <div class="itemH">8</div>
+      <div class="itemI">9</div>
+      <div class="itemJ">10</div>
+      <div class="itemK">11</div>
+      <div class="itemL">12</div>
+      <div class="itemM">13</div>
+      <div class="itemN">14</div>
+      <div class="itemO">15</div>
+      <div class="itemP">16</div>
+      <div class="itemQ">17</div>
+      <div class="itemR">18</div>
+    </div>
+  </body>
+</html>
