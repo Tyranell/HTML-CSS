@@ -1,0 +1,472 @@
+<html>
+  <head>
+    <style>
+      body {
+        text-align: center;
+        font-family: "Courier New", Courier, monospace;
+        background-color: wheat;
+      }
+
+      h1 {
+        font-weight: normal;
+        font-size: 60px;
+      }
+
+      .biggrid {
+        display: grid;
+        grid-template-columns: minmax(0, 30%) minmax(0, 50%);
+        background-color: pink;
+        width: 100%;
+        border: dashed 3px black;
+        gap: 3px;
+        justify-content: center;
+        grid: "a b";
+      }
+
+      .gridelement1,
+      .gridelement2,
+      .gridelement3,
+      .gridelement4,
+      .gridelement5,
+      .gridelement6,
+      .gridelement7,
+      .gridelement8,
+      .gridelement9,
+      .gridelement10,
+      .gridelement11,
+      .gridelement12,
+      .gridelement13,
+      .gridelement14,
+      .gridelement15,
+      .gridelement16,
+      .gridelement17,
+      .gridelement18,
+      .gridelement19,
+      .gridelement20,
+      .gridelement21,
+      .gridelement22,
+      .gridelement23,
+      .gridelement24,
+      .gridelement25,
+      .gridelement26,
+      .gridelement27,
+      .gridelement28,
+      .gridelement29,
+      .gridelement30,
+      .gridelement31,
+      .gridelement32,
+      .gridelement33,
+      .gridelement34,
+      .gridelement35,
+      .gridelement36,
+      .gridelement37,
+      .gridelement38 {
+        margin: 2px;
+        border: dashed 1px blue;
+      }
+
+      .grid1,
+      .grid2 {
+        display: grid;
+        grid-template-rows: repeat(19, 1fr);
+        margin: 2px;
+        border: solid 1px black;
+      }
+
+      .grid1 {
+        grid-area: a;
+        grid:
+          "aa"
+          "ab"
+          "ac"
+          "ad"
+          "ae"
+          "af"
+          "ag"
+          "ah"
+          "ai"
+          "aj"
+          "ak"
+          "al"
+          "am"
+          "an"
+          "ao"
+          "ap"
+          "aq"
+          "ar"
+          "as";
+      }
+
+      .grid2 {
+        grid-area: b;
+        grid:
+          "ba"
+          "bb"
+          "bc"
+          "bd"
+          "be"
+          "bf"
+          "bg"
+          "bh"
+          "bi"
+          "bj"
+          "bk"
+          "bl"
+          "bm"
+          "bn"
+          "bo"
+          "bp"
+          "bq"
+          "br"
+          "bs";
+      }
+
+      .gridelement1 {
+        grid-area: aa;
+      }
+      .gridelement2 {
+        grid-area: ab;
+      }
+      .gridelement3 {
+        grid-area: ac;
+      }
+      .gridelement4 {
+        grid-area: ad;
+      }
+      .gridelement5 {
+        grid-area: ae;
+      }
+      .gridelement6 {
+        grid-area: af;
+      }
+      .gridelement7 {
+        grid-area: ag;
+      }
+      .gridelement8 {
+        grid-area: ah;
+      }
+      .gridelement9 {
+        grid-area: ai;
+      }
+      .gridelement10 {
+        grid-area: aj;
+      }
+      .gridelement11 {
+        grid-area: ak;
+      }
+      .gridelement12 {
+        grid-area: al;
+      }
+      .gridelement13 {
+        grid-area: am;
+      }
+      .gridelement14 {
+        grid-area: an;
+      }
+      .gridelement15 {
+        grid-area: ao;
+      }
+      .gridelement16 {
+        grid-area: ap;
+      }
+      .gridelement17 {
+        grid-area: aq;
+      }
+      .gridelement18 {
+        grid-area: ar;
+      }
+      .gridelement19 {
+        grid-area: as;
+      }
+
+      .gridelement20 {
+        grid-area: ba;
+      }
+      .gridelement21 {
+        grid-area: bb;
+      }
+      .gridelement22 {
+        grid-area: bc;
+      }
+      .gridelement23 {
+        grid-area: bd;
+      }
+      .gridelement25 {
+        grid-area: be;
+      }
+      .gridelement25 {
+        grid-area: bf;
+      }
+      .gridelement26 {
+        grid-area: bg;
+      }
+      .gridelement27 {
+        grid-area: bh;
+      }
+      .gridelement28 {
+        grid-area: bi;
+      }
+      .gridelement29 {
+        grid-area: bj;
+      }
+      .gridelement30 {
+        grid-area: bk;
+      }
+      .gridelement31 {
+        grid-area: bl;
+      }
+      .gridelement32 {
+        grid-area: bm;
+      }
+      .gridelement33 {
+        grid-area: bn;
+      }
+      .gridelement34 {
+        grid-area: bo;
+      }
+      .gridelement35 {
+        grid-area: bp;
+      }
+      .gridelement36 {
+        grid-area: bq;
+      }
+      .gridelement37 {
+        grid-area: br;
+      }
+      .gridelement38 {
+        grid-area: bs;
+      }
+
+      .highlighted {
+        font-weight: bold;
+        background-color: hotpink;
+      }
+
+      .nonhighlighted {
+        margin-top: -15px;
+        font-weight: normal;
+        background-color: transparent;
+        font-style: normal;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Grid</h1>
+
+    <div class="biggrid">
+      <div class="grid1">
+        <div class="gridelement1"><p>Container Properties</p></div>
+        <div class="gridelement2">
+          <p class="highlighted">//Creates a flexbox</p>
+          <p class="nonhighlighted">display: grid || inline-grid;</p>
+        </div>
+        <div class="gridelement3">
+          <p class="highlighted">//Creates grid columns</p>
+          <p class="nonhighlighted">
+            grid-template-columns: length || percentage || fr || line-name
+          </p>
+        </div>
+        <div class="gridelement4">
+          <p class="highlighted">//Creates grid rows</p>
+          <p class="nonhighlighted">
+            grid-template-rows: length || percentage || fr || line-name
+          </p>
+        </div>
+        <div class="gridelement5">
+          <p class="highlighted">//Creates a grid with specified areas</p>
+          <p class="nonhighlighted">
+            grid-template-areas: grid-area-name || none || .
+          </p>
+        </div>
+        <div class="gridelement6">
+          <p class="highlighted">
+            //Creates rows, columns and areas in a single declaration
+          </p>
+          <p class="nonhighlighted">
+            grid-template: none (initial values) || grid-template-rows /
+            grid-template-columns
+          </p>
+        </div>
+        <div class="gridelement7">
+          <p class="highlighted">
+            //Creates spaces between grid-items on the row axis
+          </p>
+          <p class="nonhighlighted">row-gap (grid-row-gap) : length</p>
+        </div>
+        <div class="gridelement8">
+          <p class="highlighted">
+            //Creates spaces between grid-items on the column axis
+          </p>
+          <p class="nonhighlighted">column-gap (grid-column-gap) : length</p>
+        </div>
+        <div class="gridelement9">
+          <p class="highlighted">
+            //Creates spaces between grid-items on the row and column axis
+          </p>
+          <p class="nonhighlighted">
+            gap (grid-gap) : grid-row-gap grid-column-gap
+          </p>
+        </div>
+        <div class="gridelement10">
+          <p class="highlighted">
+            //Align grid items along the inline / row axis
+          </p>
+          <p class="nonhighlighted">
+            justify-items: start || end || center || stretch
+          </p>
+        </div>
+        <div class="gridelement11">
+          <p class="highlighted">
+            //Align grid items along the block / column axis
+          </p>
+          <p class="nonhighlighted">
+            align-items: start || end || center || stretch
+          </p>
+        </div>
+        <div class="gridelement12">
+          <p class="highlighted">
+            //Align grid iemts along the inline and block axis (shorthand)
+          </p>
+          <p class="nonhighlighted">place-items: align-items / justify-items</p>
+        </div>
+        <div class="gridelement13">
+          <p class="highlighted">
+            //Align the whole grid (container) along the inline / row axis
+          </p>
+          <p class="nonhighlighted">
+            justify-content: start || end || center || stretch || space-around
+            || space-between || space-evenly
+          </p>
+        </div>
+        <div class="gridelement14">
+          <p class="highlighted">
+            //Align the whole grid (container) along the block / column axis
+          </p>
+          <p class="nonhighlighted">
+            align-content: start || end || center || stretch || space-around ||
+            space-between || space-evenly
+          </p>
+        </div>
+        <div class="gridelement15">
+          <p class="highlighted">
+            //Align the whole grid (container) along the inline and block axis
+          </p>
+          <p class="nonhighlighted">
+            place-content: align-content / justify-content
+          </p>
+        </div>
+        <div class="gridelement16">
+          <p class="highlighted">
+            //Specifies the size of any auto-generated grid row
+          </p>
+          <p class="nonhighlighted">
+            grid-auto-rows: size (length || percentage || fr)
+          </p>
+        </div>
+        <div class="gridelement17">
+          <p class="highlighted">
+            //Specifies the size of any auto-generated grid column
+          </p>
+          <p class="nonhighlighted">
+            grid-auto-columns: size (length || percentage || fr)
+          </p>
+        </div>
+        <div class="gridelement18">
+          <p class="highlighted">
+            //Sets the algorithm that places the grid-items
+          </p>
+          <p class="nonhighlighted">grid-auto-flow: row || column || dense</p>
+        </div>
+        <div class="gridelement19">
+          <p class="highlighted">//Shorthand for almost every property</p>
+          <p class="nonhighlighted">
+            grid: grid-template-rows grid-template-columns grid-template-areas
+            grid-auto-rows grid-auto-columns grid-auto-flow
+          </p>
+        </div>
+      </div>
+      <div class="grid2">
+        <div class="gridelement20"><p>Item Properties</p></div>
+        <div class="gridelement21">
+          <p class="highlighted">
+            //Determines the column start of an item within the grid
+          </p>
+          <p class="nonhighlighted">
+            grid-column-start: line || span (number || name) || auto
+          </p>
+        </div>
+        <div class="gridelement22">
+          <p class="highlighted">
+            //Determines the row start of an item within the grid
+          </p>
+          <p class="nonhighlighted">
+            grid-row-start: line || span (number || name) || auto
+          </p>
+        </div>
+        <div class="gridelement23">
+          <p class="highlighted">
+            //Determines the column end of an item within the grid
+          </p>
+          <p class="nonhighlighted">
+            grid-column-end: line || span (number || name) || auto
+          </p>
+        </div>
+        <div class="gridelement24">
+          <p class="highlighted">
+            //Determines the row end of an item within the grid
+          </p>
+          <p class="nonhighlighted">
+            grid-row-end: line || span (number || name) || auto
+          </p>
+        </div>
+        <div class="gridelement25">
+          <p class="highlighted">//Shorthanded for column start and end</p>
+          <p class="nonhighlighted">
+            grid-column: grid-column-start grid-column-end
+          </p>
+        </div>
+        <div class="gridelement26">
+          <p class="highlighted">//Shorthanded for row start and end</p>
+          <p class="nonhighlighted">grid-row: grid-row-start grid-row-end</p>
+        </div>
+        <div class="gridelement27">
+          <p class="highlighted">//Give a grid area name to a grid item</p>
+          <p class="nonhighlighted">
+            grid-area: name || row-start / column-start / row-end / column-end
+          </p>
+        </div>
+        <div class="gridelement28">
+          <p class="highlighted">
+            //Aligns a grid-item inside a cell along the row / inline axis
+          </p>
+          <p class="nonhighlighted">
+            justify-self: start || end || center || stretch
+          </p>
+        </div>
+        <div class="gridelement29">
+          <p class="highlighted">
+            //Aligns a grid-item inside a cell along the column / block axis
+          </p>
+          <p class="nonhighlighted">
+            align-self: start || end || center || stretch
+          </p>
+        </div>
+        <div class="gridelement30">
+          <p class="highlighted">
+            //Aligns a grid-item inside a cell along the row / inline and column
+            / block axis
+          </p>
+          <p class="nonhighlighted">place-self: align-self justify-self</p>
+        </div>
+        <div class="gridelement31"></div>
+        <div class="gridelement32"></div>
+        <div class="gridelement33"></div>
+        <div class="gridelement34"></div>
+        <div class="gridelement35"></div>
+        <div class="gridelement36"></div>
+        <div class="gridelement37"></div>
+        <div class="gridelement38"></div>
+      </div>
+    </div>
+  </body>
+</html>
