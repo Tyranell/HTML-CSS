@@ -1,0 +1,79 @@
+<html>
+  <head>
+    <style>
+      .grid-container {
+        display: grid;
+        border: solid 2px black;
+        width: 300px;
+        height: 600px;
+
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        padding: 10px;
+        margin-top: -300px;
+        margin-left: -150px;
+      }
+
+      .grid-container {
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(5, 1fr);
+        grid-template-areas:
+          "A A B"
+          "A A B"
+          "C D D"
+          "C E G"
+          "F F G";
+      }
+
+      .grid__child:nth-child(1),
+      .grid__child:nth-child(4),
+      .grid__child:nth-child(7) {
+        background-color: blue;
+      }
+
+      .grid__child:nth-child(2),
+      .grid__child:nth-child(5) {
+        background-color: green;
+      }
+
+      .grid__child:nth-child(3),
+      .grid__child:nth-child(6) {
+        background-color: red;
+      }
+
+      .grid__child:nth-child(1) {
+        grid-area: A;
+      }
+      .grid__child:nth-child(2) {
+        grid-area: B;
+      }
+      .grid__child:nth-child(3) {
+        grid-area: C;
+      }
+      .grid__child:nth-child(4) {
+        grid-area: D;
+      }
+      .grid__child:nth-child(5) {
+        grid-area: E;
+      }
+      .grid__child:nth-child(6) {
+        grid-area: F;
+      }
+      .grid__child:nth-child(7) {
+        grid-area: G;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="grid-container">
+      <div class="grid__child">A</div>
+      <div class="grid__child">B</div>
+      <div class="grid__child">C</div>
+      <div class="grid__child">D</div>
+      <div class="grid__child">E</div>
+      <div class="grid__child">F</div>
+      <div class="grid__child">G</div>
+    </div>
+  </body>
+</html>

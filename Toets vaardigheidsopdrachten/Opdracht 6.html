@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <style>
+      .flex-container {
+        display: flex;
+        border: solid 2px black;
+        flex-wrap: wrap;
+        flex-direction: row;
+        width: auto;
+        max-width: 500px;
+        height: 120px;
+
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        padding: 10px;
+        margin-top: -60px;
+        margin-left: -250px;
+      }
+
+      @media only screen and (min-width: 1171px) {
+        .flex__child {
+          width: 10rem;
+          flex: 0 0 auto;
+          flex-grow: 1;
+        }
+      }
+
+      @media only screen and (max-width: 1170px) {
+        .flex__child {
+          width: 15rem;
+          flex: 0 0 auto;
+          flex-grow: 1;
+        }
+      }
+
+      @media only screen and (max-width: 570px) {
+        .flex__child {
+          width: 20rem;
+          flex: 0 0 auto;
+          flex-grow: 1;
+        }
+      }
+      .flex__child:nth-child(1),
+      .flex__child:nth-child(4),
+      .flex__child:nth-child(7) {
+        background-color: blue;
+      }
+
+      .flex__child:nth-child(2),
+      .flex__child:nth-child(5) {
+        background-color: green;
+      }
+
+      .flex__child:nth-child(3),
+      .flex__child:nth-child(6) {
+        background-color: red;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="flex-container">
+      <div class="flex__child">A</div>
+      <div class="flex__child">B</div>
+      <div class="flex__child">C</div>
+      <div class="flex__child">D</div>
+      <div class="flex__child">E</div>
+      <div class="flex__child">F</div>
+      <div class="flex__child">G</div>
+    </div>
+  </body>
+</html>
